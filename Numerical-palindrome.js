@@ -23,3 +23,6 @@ Examples:
   palindrome("15651",5) => "Not valid" 
   palindrome(1221,"8") => "Not valid" 
 */
+
+
+// Solution
