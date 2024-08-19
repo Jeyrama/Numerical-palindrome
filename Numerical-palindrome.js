@@ -26,3 +26,16 @@ Examples:
 
 
 // Solution
+
+function palindrome(num, s) { 
+  if (!Number.isInteger(num) || !Number.isInteger(s) || num * s < 0) {
+    return "Not valid"
+  }
+  const result = []
+  for (let n = Math.max(11, num); result.length < s; ++n) {
+    if (String(n) === [...String(n)].reverse().join("")) {
+      result.push(n)
+    }
+  }
+  return result
+}
