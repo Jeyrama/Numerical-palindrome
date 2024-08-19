@@ -41,3 +41,16 @@ function palindrome(num, s) {
 }
 
 // or
+
+function palindrome(num,s) { 
+  if(num < 0 || typeof num !== 'number' || typeof s !== 'number') return 'Not valid';
+  let arr = [];
+  while(arr.length < s) {
+    let backwards = String(num).split('').reverse().join('');
+    if(backwards.length > 1 && backwards === String(num)) {
+      arr.push(num);
+    }
+    num++;
+  }
+  return arr;
+}
