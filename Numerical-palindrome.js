@@ -39,3 +39,5 @@ function palindrome(num, s) {
   }
   return result
 }
+
+// or
